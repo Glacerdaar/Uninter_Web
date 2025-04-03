@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gabriel A. Lacerda</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <!-- Título / Logo do portfólio -->
+        <div class="header_title_container">
+            <p class="header_title">Gabriel Lacerda</p>
+        </div>
+
+        <!-- Lista de links no header -->
+        <div>
+            <ul class="header_list_link">
+                <li><a class="header_link" href="#about">Sobre mim</a></li>
+                <li><a class="header_link" href="#projects">Projetos</a></li>
+                <li><a class="header_link" href="#contact">Contato</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+
+    
+    <!-- Seção sobre, que foi utilizada para falar sobre mim -->
+    <section id="about">
+
+        <div class="about_description">
+            <h1 class="about_description_name">Gabriel Lacerda</h1>
+            <p class="about_description_text"><span>Sou</span> graduando em Análise e desenvolvimento de sistemas pela UNINTER. Tenho 25 anos, estou em busca do meu primeiro estágio.
+                Profissional com perfil movido a desafios. Possuo experiências em HTML, CSS, JavaScript,
+                React, NextJs e habilidades em desenvolvimento web.
+            </p>
+        </div>
+
+    </section>
+
+    <!-- Seção projetos. que conta um pouco dos meus projetos feitos -->
+    <section id="projects">
+
+        <div>
+            <h1 class="projects_title">Meus projetos</h1>
+        </div>
+
+       <div class="projects_list">
+        <div class="card">
+            <img src="/imagens/automacao.jpg" alt="">
+            <div class="container">
+                <h4>Automação financeira</h4>
+                <p>Realizei uma automação utilizando JavaScript e Amazon Textract.</p>
+                <button class="dropdown-btn" onclick="toggleDropdown()">Como funcionava ▼</button>
+                <div class="dropdown-content">
+                    <ul class="projects_list_list">
+                        <li>O robô acessava o <strong>Gmail</strong>, identificando e-mails com NFS-e anexadas.</li>
+                        <li>Realizava o <strong>download automático</strong> do arquivo PDF.</li>
+                        <li>Utilizava o <strong>Amazon Textract</strong> para extrair informações essenciais.</li>
+                        <li>Verificava se a NFS-e já estava registrada em uma <strong>planilha do Google Sheets</strong>.</li>
+                        <li>Se não estivesse, adicionava os dados automaticamente à planilha.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="/imagens/nuvemShop.webp" alt="">
+            <div class="container">
+                <h4>Desenvolvimento de e-commerce</h4>
+                <p>Realizei a criação de um e-commerce utilizando a plataforma Nuvemshop.</p>
+                <button class="dropdown-btn" onclick="toggleDropdown()">Como funcionava ▼</button>
+                <div class="dropdown-content">
+                    <ul class="projects_list_list">
+                        <li>Planejamento e desenvolvimento de e-commerce personalizado utilizando a plataforma NuvemShop.</li>
+                        <li>Adaptação e modificação do layout padrão para refletir a identidade visual e necessidades específicas do cliente.</li>
+                        <li>Cadastro e organização de produtos e categorias para melhorar a navegação e experiência do usuário.</li>
+                        <li>Configuração da ferramenta Tagy para integração de vendas via WhatsApp.</li>
+                        <li>Configuração da ferramenta Mobilizei para refletir o e-commerce em aplicativo.</li>
+                        <li>Implementação do Google Analytics para coleta e análise de dados de desempenho do e-commerce.</li>
+                        <li>Realização de reuniões estratégicas e treinamentos personalizados com o cliente para capacitação e alinhamento do projeto.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+       </div>
+
+    </section>
+
+
+    <!-- Seção contato, que possui uma chamada para entrar em contato comigo, seguido de um formulário -->
+    <section id="contact">
+        <div class="contact_container">
+            <div class="form_message">
+                <h2>Entre em contato.</h2>
+                <p>Por favor, informe seu nome, e-mail e uma mensagem detalhando o motivo do seu contato.</p>
+            </div>
+    
+            <form class="form">
+    
+               <div>
+                    <label for="name" class="form_label">Nome</label>
+                    <input type="text" placeholder="Nome" class="form_input" id="name">
+               </div>
+    
+                <div>
+                    <label for="email" class="form__label">Email</label>
+                    <input type="email" placeholder="E-mail" class="form__input" id="email" />
+                </div>
+        
+                <div>
+                    <label for="menssage" class="form__label">Mensagem</label>
+                    <input type="text" placeholder="Mensagem" class="form__input" id="menssage" />
+                </div>
+
+                <button id="btn_form">Enviar</button>
+            </form>
+        </div>
+    </section>
+
+<!-- Um footer para apresentar o desenvolvedor e trazer credibilidade -->
+    <footer>
+        <h5>Trabalho de Ferramentas de Desenvolvimento Web</h5>
+        <p>Gabriel Araujo Lacerda</p>
+    </footer>
+</main>
+    <script src="index.js"></script>
+</body>
+</html>
