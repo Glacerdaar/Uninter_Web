@@ -1,16 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
 
+/* Estilização global. */
 * {
     margin: 0;
     padding: 0;
     font-family: "Sora", sans-serif;
 }
 
+/* Estilização da parte principal do portfolio */
+
 main {
     background-color: #F8F1FF;
 }
 
-/* Aqui começa as estilizações do código CSS referente ao header */
+/* estilização geral do cabeçalho */
 header{ 
     height: 80px;
     display: flex;
@@ -18,13 +21,13 @@ header{
     align-items: center;
     background-color: #14110F;
 }
-
+/* estilização do título "logo" */
 .header_title {
     font-size: 24px;
     font-weight: bold;
     color: #8AC5C5;
 }
-
+/* Estilização do link no cabeçalho */
 .header_list_link {
     display: flex;
     gap: 30px;
@@ -40,16 +43,14 @@ header{
         color: #1B998B;
     }
 }
-/* Aqui termina as estilizações do código CSS referente ao header */
-
-/* Aqui começa as estilizações do código CSS referente a seção sobre */
+/* estilização da seção sobre */
 #about {
     display: flex;
     justify-content: center;
     padding-top: 40px;
     margin-bottom: 40px;
 }
-
+/* estilização da descrição "sobre" */
 .about_description {
     max-width: 800px;
 }
@@ -66,10 +67,7 @@ span {
     margin-left: 8px;
 }
 
-/* Aqui termina as estilizações do código CSS referente ao sobre */
-
-
-/* Aqui começa as estilizações do código CSS referente a seção projetos */
+/* Estilização da seção projetos que está logo abaixo de "sobre mim" */
 #projects {  
     max-width: 800px;
     margin: auto;
@@ -133,9 +131,8 @@ span {
 .container {
     padding: 16px 16px;
 }
-/* Aqui termina as estilizações do código CSS referente ao projetos */
 
-/* Aqui começa as estilizações do código CSS referente a seção contato */
+/* Estilização da área onde está o formulário para entrar em contato */
 #contact {
     margin: 40px auto;
     max-width: 800px;
@@ -197,10 +194,7 @@ button {
 button:hover{
     background-color: #8AC5C5;
 }
-/* Aqui termina as estilizações do código CSS referente a seção contato */
 
-
-/* Aqui foi feita uma pequena estilização do footer */
 footer {
     text-align: center;
     background-color: #071108;
@@ -209,7 +203,8 @@ footer {
 }
 
 
-/* Aqui foi a responsividade, começando pelo tablet */
+/* Aqui é feita a configuração da responsividade */
+/* Primeiro é o tablet */
 @media (min-width: 768px) and (max-width: 1023px) {
     .about_description, #projects, #contact {
         max-width: 600px; 
@@ -217,7 +212,7 @@ footer {
     }
 }
 
-/* Aqui é a segunda parte, que é referente a responsividade mobile */
+/* Aqui é o mobile, pois não utilizei mobile-first. */
 @media (max-width: 767px) {
     .about_description, #projects, #contact {
         max-width: 300px; 
